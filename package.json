@@ -1,0 +1,20 @@
+{
+  "name": "techpulse",
+  "version": "1.0.0",
+  "description": "Hacker News dashboard with Node.js, Firestore REST caching, and vanilla HTML/JS",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["hacker-news", "firestore", "nodejs", "api-integration"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "google-auth-library": "^9.15.1"
+  }
+}

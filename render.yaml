@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: techpulse
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false
+      - key: CACHE_TTL_LIST_MS
+        value: 300000
+      - key: CACHE_TTL_ITEM_MS
+        value: 900000
